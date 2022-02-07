@@ -355,6 +355,26 @@ h1, h2, h3, h4, h5, h6 {
   border: 2px solid #297836;
 }
 
+#hero .btn-see-demo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 35px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin-top: 30px;
+  border: 0px solid #fff;
+  color: #fff;
+}
+
+#hero .btn-see-demo:hover {
+  background-image: linear-gradient(5deg, #ECE63E, #449F53);
+  border: 0px solid #297836;
+
+}
+
 @media (min-width: 1024px) {
   #hero {
     background-attachment: fixed;
@@ -1266,16 +1286,17 @@ section {
   padding: 10px 12px;
 }
 
-.contact .php-email-form button[type="submit"] {
+.student {
   background: #5fcf80;
   border: 0;
   padding: 10px 35px;
   color: #fff;
   transition: 0.4s;
   border-radius: 50px;
+  margin-right: 5px;
 }
 
-.contact .php-email-form button[type="submit"]:hover {
+.student:hover {
   background: #3ac162;
 }
 
@@ -1459,4 +1480,7 @@ section {
   background: #3ac162;
   color: #fff;
   text-decoration: none;
+}
+.sizer {
+  height: 320px;
 }
