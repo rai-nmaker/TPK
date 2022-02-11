@@ -1289,7 +1289,7 @@ section {
 .student {
   background: #5fcf80;
   border: 0;
-  padding: 10px 35px;
+  padding: 10px 30px;
   color: #fff;
   transition: 0.4s;
   border-radius: 50px;
@@ -1299,6 +1299,7 @@ section {
 .student:hover {
   background: #3ac162;
 }
+
 
 @-webkit-keyframes animate-loading {
   0% {
