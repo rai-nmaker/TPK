@@ -38,6 +38,37 @@
 
 <body>
 
+  <!-- Messenger Chat Plugin Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Chat Plugin code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "109620221461263");
+      chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
+    <!-- Your SDK code -->
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v12.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+    
     <!-- ======= Header ======= -->
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center">
@@ -76,7 +107,7 @@
         </ul> -->
 
 
-      <a href="https://docs.google.com/forms/d/e/1FAIpQLScUMPKxt1AEuRFD9clVINcdB_N0XhVTIJiSVl3xiWZS4ACLog/viewform" id="grad" class="get-started-btn">Register Now!</a>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSeR4nQJWGxXGzMq9qn_OxBr58UyPs4r8bjfpnRRkZPclBkbjA/viewform?usp=sf_link" id="grad" class="get-started-btn">Book A Teacher!</a>
 
     </div>
   </header><!-- End Header -->
@@ -229,8 +260,8 @@
           </div> -->
 
           <div class="col-lg-6 col-md-6 footer-newsletter">
-            <h1 id="submitform">We're launching soon!</h1>
-            <p>Register now and be part of an innovative educational platform.</p>
+            <h1 id="submitform">Register Now!</h1>
+            <p>Be part of our learning and growing community.</p>
             <br>
             <a href="https://docs.google.com/forms/d/e/1FAIpQLSevWO1YOZcut0CuYWzXwFVSZ5YnJFSehI0r3d1VbdcWglKeBQ/viewform" class="student">I'm a teacher</a>
             <a href="https://docs.google.com/forms/d/e/1FAIpQLSfikBqk-1D9Y5QCOst4TAVRlQ-k98dxD4i5U_wpS393AZV8xA/viewform?usp=sf_link" class="student">I'm a student</a>
