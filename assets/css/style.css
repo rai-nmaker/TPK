@@ -27,6 +27,10 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway", sans-serif;
 }
 
+.img-fluid {
+  width: 300px;
+  height: auto;
+}
 
 /*--------------------------------------------------------------
 # Back to top button
@@ -444,24 +448,43 @@ section {
 
 .breadcrumbs {
   margin-top: 73px;
-  text-align: center;
   background: #449F53;
   padding: 30px 0;
   color: #fff;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 520px) {
   .breadcrumbs {
-    margin-top: 63px;
+    margin-top: 110px;
   }
+
+}
+
+@media (max-width: 991px) {
+
+
+
+
+}
+
+.breadcrumbs i {
+
+    font-size: 40px;
+    cursor: pointer;
+    transition: font-size 0.5s ease-out 100ms;
+}
+.breadcrumbs i:hover {
+  font-size: 42px;
 }
 
 .breadcrumbs h2 {
   font-size: 32px;
+  text-align: center;
   font-weight: 500;
 }
 
 .breadcrumbs p {
+  text-align: center;
   font-size: 14px;
   margin-bottom: 0;
 }
@@ -1200,7 +1223,7 @@ section {
   color: #657a6d;
 }
 
-.contact .info .email, .contact .info .phone {
+.contact .info .el, .contact .info .phone {
   margin-top: 40px;
 }
 
